@@ -16,12 +16,7 @@
 
 set -eEuo pipefail
 
-PORT := os.Getenv("PORT")
-if PORT == "" {
-        PORT = "8080"
-}
-
-#PORT="${PORT:-8080}"
+PORT="${PORT:-8080}"
 echo "Listening on ${PORT}..."
 nc -lk -p "${PORT}" -e "./date.sh"
 
