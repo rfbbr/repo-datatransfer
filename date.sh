@@ -9,3 +9,4 @@ EOF
 )"
 echo -en "$HEAD"
 date
+gcloud alpha storage ls --project=sem-servidor-348402
