@@ -3,11 +3,11 @@ set -eEuo pipefail
 
 gcloud builds submit \
   --project "${PROJECT_ID}" \
-  --tag "gcr.io/${PROJECT_ID}/repo-datatransfer" \
+  --tag "gcr.io/${PROJECT_ID}/repo_datatransfer" \
   .
 
-gcloud beta run deploy "/repo-datatransfer" \
-  --image "gcr.io/${PROJECT_ID}/repo-datatransfer" \
+gcloud beta run deploy "/repo_datatransfer" \
+  --image "gcr.io/${PROJECT_ID}/repo_datatransfer" \
   --platform "managed" \
   --region "us-central1" \
   --project "${PROJECT_ID}" \
