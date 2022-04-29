@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -eEuo pipefail
-PORT="${PORT:-8080}"
+PORT="${PORT:-8081}"
 echo "Listening on ${PORT}..."
 nc -lk -p "${PORT}" -e "./date.sh"
 
